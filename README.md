@@ -1,0 +1,5 @@
+# Algoritmos run codes, resolucao em python 3.14
+
+## site run codes ifpi
+
+### curso tecnico em desenvolvimento de sistemas
