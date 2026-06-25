@@ -11,11 +11,12 @@ def main():
         alunos.append((nome, idade, altura))
         soma_alturas += altura
     
-    media_alturas = soma_alturas / len(alunos)
+    media = round(soma_alturas / len(alunos), 2)
 
     menores_que_a_media = []
+
     for aluno in alunos:
-        if aluno[1] > 13 and aluno[2] < media_alturas:
+        if aluno[1] > 13 and media > aluno[2]:
             menores_que_a_media.append(aluno[0])
 
     print("MAIORES DE 13 ANOS COM ALTURA ABAIXO DA MÉDIA")
