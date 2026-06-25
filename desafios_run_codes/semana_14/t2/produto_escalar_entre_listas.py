@@ -15,13 +15,13 @@ def main():
     equacao = ""
     produto_escalar = 0
     for i in range(5):
-        equacao += f"({x[i]} x {y[i]}) + "
+        if i < 4:
+            equacao += f"({x[i]} x {y[i]}) + "
         produto_escalar += x[i] * y[i]
 
         if i == 4:
             equacao += f"({x[i]} x {y[i]}) = {produto_escalar}"
 
-    
     print(x)
     print(y)
     print(equacao)
